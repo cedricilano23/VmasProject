@@ -1,5 +1,7 @@
 const checker = require('./checker')
 
+const quota = 5
+var counter = 0
 /**
  * Word Processing
  * 1. Checks if word is already in the WORDS array as root word
@@ -38,7 +40,12 @@ const wordProcess = (word) => {
             if(hulapi.status)
                 getBase = checker.hulapi(getBase).word.new
 
-            return getBase
+            if (quota > counter && !checker.word(getBase)) {
+                counter++
+                return wordProcess(getBase)
+            } else {
+                return getBase
+            }
         }
     }
 
