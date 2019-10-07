@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { wordProcess } from '../../utils/classifier';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(wordProcess('pinaglalaruan'))
   }
 
 }
