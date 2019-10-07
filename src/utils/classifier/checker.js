@@ -23,10 +23,12 @@ const wordChecker = (word) => words.indexOf(word) !== -1
  *      status as result 
  */
 const unlapiChecker = (word) => { 
-    panlapi.unlapi.forEach((lapi, index) => {
+    for(var a = 0; a < panlapi.unlapi.length; a++) {
+        let lapi = panlapi.unlapi[a];
+
         if(lapi === word.substr(0, lapi.length))
             return panlapiHelper.displayOutput(word, true, word.substr(lapi.length), lapi)
-    })
+    }
 
     if(word.charAt(0) === word.charAt(1))
         return panlapiHelper.displayOutput(word, true, word.substr(1), word.charAt(0))
