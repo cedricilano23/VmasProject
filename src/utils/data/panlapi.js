@@ -1,4 +1,5 @@
 const unlapi = [
+    'nag',
     'mag',
     'pag'
 ]

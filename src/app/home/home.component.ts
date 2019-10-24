@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { wordProcess } from '../../utils/classifier';
+import format from '../../utils/classifier/format';
+import wordCounter from '../../utils/counter';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(wordProcess('pinaglalaruan'))
+    console.log(wordCounter('Ako ay pinaglalaruan'))
+    console.log(wordProcess(format('pinaglalaruan')))
   }
-
 }
