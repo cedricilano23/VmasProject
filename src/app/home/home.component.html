@@ -21,16 +21,16 @@
                     <aside class="col-md-5 mobile-app-column">
                         <div class="mobile-app" id="formContainer2">
                             <h2 class ="form-title text-center">Insert word file here</h2>
-                            <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml">
+                            <!-- <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml"> -->
                                 <div class="formAside">
                                     <div class="form-group">
-                                        <input type="file" id="docpicker" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                        <input type="file" id="docpicker" (change)="fileChanged($event)" accept=".txt">
                                     </div>
                                     <div class="text-center ct-u-paddingTop30">
-                                        <button type="submit" class="btn btn-small btn-motive">Submit</button>
+                                        <button type="submit" (click)="uploadDocument()" class="btn btn-small btn-motive">Submit</button>
                                     </div>
                                 </div>
-                            </form>
+                            <!-- </form> -->
                         </div>
                     </aside>
                 </div>
