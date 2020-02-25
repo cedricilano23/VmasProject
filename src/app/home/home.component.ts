@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     var wbSummaryData = []
 
     var books = Object.keys(results)
-    books.forEach(book => {
+    books.forEach((book, bookIndex) => {
       wb.SheetNames.push(book)
       var wbData = []
       var typeData = results[book].words
@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
         "Count of Morpheme"
       ]
 
-      wbSummaryData.push(headers)
+      if (bookIndex == 0) wbSummaryData.push(headers)
       wbData.push(headers)
 
       words.forEach(word => {
@@ -108,7 +108,6 @@ export class HomeComponent implements OnInit {
         results[book].count,
         morphemeCountTotal
       ]
-      wbSummaryData.push(footer)
       wbData.push(footer)
 
       var wbDataSheet = XLSX.utils.aoa_to_sheet(wbData);
