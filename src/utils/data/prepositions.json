@@ -1,0 +1,43 @@
+{
+  "sa": {
+    "breakdown": "sa",
+    "classification": "NPERS.SG.OBL",
+    "adult": "sa"
+  },
+  "nga": {
+    "breakdown": "nga",
+    "classification": "PRT.really",
+    "adult": "nga"
+  },
+  "dito": {
+    "breakdown": "dito",
+    "classification": "NPERS.SG.OBL",
+    "adult": "dito"
+  },
+  "na": {
+    "breakdown": "na",
+    "classification": "PRT.already",
+    "classification2": "LNK.CONJ",
+    "adult": "na"
+  },
+  "nasa": {
+    "breakdown": "nasa",
+    "classification": "POSIT",
+    "adult": "nasa"
+  },
+  "din": {
+    "breakdown": "din",
+    "classification": "PRT.too",
+    "adult": "din"
+  },
+  "dun": {
+    "breakdown": "du(oo)n",
+    "classification": "DEM.DIST.OBL",
+    "adult": "DEM.DIST.OBL"
+  },
+  "doon": {
+    "breakdown": "doon",
+    "classification": "DEM.DIST.OBL",
+    "adult": "doon"
+  }
+}

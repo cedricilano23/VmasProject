@@ -1,0 +1,263 @@
+{
+	"yung": {
+		"breakdown": "(i)yu(n)=ng",
+		"classification": "DEM.DIST.ABS=LKR.1CONJ",
+		"adult": "yung"
+	},
+	"si": {
+		"breakdown": "si",
+		"classification": "PERS.SG.ABS",
+		"adult": "si"
+	},
+	"ko": {
+		"breakdown": "ko",
+		"classification": "1.SG.GEN",
+		"adult": "ko"
+	},
+	"yan": {
+		"breakdown": "(i)yan",
+		"classification": "DEM.MED.ABS",
+		"adult": "iyan"
+	},
+	"mga": {
+		"breakdown": "mga",
+		"classification": "PL",
+		"adult": "mga"
+	},
+	"niya": {
+		"breakdown": "(n)iya",
+		"classification": "2.SG.GEN",
+		"adult": "niya"
+	},
+	"mo": {
+		"breakdown": "mo",
+		"classification": "2.SG.GEN.1",
+		"adult": "mo"
+	},
+	"sakin": {
+		"breakdown": "(sa)akin",
+		"classification": "1.SG.OBL",
+		"adult": "sa akin"
+	},
+	"niyan": {
+		"breakdown": "niyan",
+		"classification": "DEM.MED.1GEN",
+		"adult": "niyan"
+	},
+	"ni": {
+		"breakdown": "ni",
+		"classification": "PERS.SG.GEN",
+		"adult": "ni"
+	},
+	"ang": {
+		"breakdown": "ang",
+		"classification": "NPERS.ABS",
+		"adult": "ang"
+	},
+	"ka": {
+		"breakdown": "ka",
+		"classification": "2.SG.ABS",
+		"adult": "ka"
+	},
+	"kayo": {
+		"breakdown": "kayo",
+		"classification": "2.PL.ABS",
+		"adult": "kayo"
+	},
+	"kami": {
+		"breakdown": "kami",
+		"classification": "1.PL.ABS",
+		"adult": "kami"
+	},
+	"sila": {
+		"breakdown": "sila",
+		"classification": "3.PL.ABS",
+		"adult": "sila"
+	},
+	"kong": {
+		"breakdown": "ko(ng)",
+		"classification": "1.SG.GEN=LKR.1CONJ",
+		"adult": "kong",
+		"Affix1": "-ng"
+	},
+	"natin": {
+		"breakdown": "natin",
+		"classification": "1.PL.GEN.1",
+		"adult": "natin"
+	},
+	"akong": {
+		"breakdown": "ako(ng)",
+		"classification": "1.SG.ABS=LKR.1CONJ",
+		"adult": "akong",
+		"Affix1": "-ng"
+	},
+	"kay": {
+		"breakdown": "kay",
+		"classification": "PERS.SG.OBL",
+		"adult": "kay"
+	},
+	"niyo": {
+		"breakdown": "niyo",
+		"classification": "2.PL.GEN",
+		"adult": "niyo"
+	},
+	"saiyo": {
+		"breakdown": "(sa)(i)yo",
+		"classification": "2.SG.OBL",
+		"adult": "saiyo"
+	},
+	"nung": {
+		"breakdown": "nu(on)(ng)",
+		"classification": "TEMP.WHEN=LKR.1CONJ",
+		"adult": "noong",
+		"Affix1": "-ng"
+	},
+	"namin": {
+		"breakdown": "(na)min",
+		"classification": "1.PL.GEN",
+		"adult": "amin",
+		"Affix1": "n-"
+	},
+	"kayong": {
+		"breakdown": "kayo(ng)",
+		"classification": "2.PL.ABS=LKR.1CONJ",
+		"adult": "kayong",
+		"Affix1": "-ng"
+	},
+	"amin": {
+		"breakdown": "(n)amin",
+		"classification": "1.PL.OBL",
+		"adult": "namin"
+	},
+	"samin": {
+		"breakdown": "(sa)amin",
+		"classification": "1.PL.OBL",
+		"adult": "saamin"
+	},
+	"nila": {
+		"breakdown": "nila",
+		"classification": "1+2.SG.GEN",
+		"adult": "nila"
+	},
+	"kang": {
+		"breakdown": "ka(ng)",
+		"classification": "2.SG.ABS=LKR.1CONJ",
+		"adult": "kang",
+		"Affix1": "-ng"
+	},
+	"akin": {
+		"breakdown": "(sa)akin",
+		"classification": "1.SG.OBL",
+		"adult": "saakin"
+	},
+	"dito": {
+		"breakdown": "dito",
+		"classification": "DEM.PROX.OBL",
+		"adult": "dito"
+	},
+	"rito": {
+		"breakdown": "dito",
+		"classification": "DEM.PROX.OBL",
+		"adult": "rito"
+	},
+	"siya": {
+		"breakdown": "siya",
+		"Classification1": "3.SG.ABS",
+		"Classification2": "3.TOPIC",
+		"adult": "siya"
+	},
+	"ikaw": {
+		"breakdown": "ikaw",
+		"Classification1": "2.SG.ABS",
+		"Classification2": "2.TOPIC",
+		"adult": "ikaw"
+	},
+	"toh": {
+		"breakdown": "(i)to",
+		"Classification1": "DEM.PROX.ABS",
+		"Classification2": "DEM.PROX.ABS QM",
+		"adult": "siya"
+	},
+	"ako": {
+		"breakdown": "ako",
+		"Classification1": "1.SG.ABS",
+		"Classification2": "1.TOPIC",
+		"adult": "ako"
+	},
+	"ito": {
+		"breakdown": "ito",
+		"Classification1": "DEM.PROX.ABS",
+		"Classification2": "DEM.PROX.ABS QM",
+		"adult": "ito"
+	},
+	"ng": {
+		"breakdown": "ng",
+		"Classification1": "LKR.1CONJ",
+		"Classification2": "NPERS.GEN",
+		"adult": "ng"
+	},
+	"kanila": {
+		"breakdown": "(sa)kanila",
+		"Classification1": "3.PL.OBL",
+		"Classification2": "1+2SG.OBL",
+		"adult": "kanila"
+	},
+	"kaming": {
+		"stem": "kami",
+		"affix1": "-ng",
+		"breakdown": "kami(ng)",
+		"Classification1": "1.PL.ABS=LKR.1CONJ",
+		"adult": "kaming"
+	},
+	"iyan": {
+		"breakdown": "(i)yan",
+		"Classification1": "DEM.MED.ABS",
+		"Classification2": "DEM.DIST.ABS",
+		"adult": "iyan"
+	},
+	"iyun": {
+		"breakdown": "(i)yun",
+		"Classification1": "DEM.MED.ABS",
+		"Classification2": "DEM.DIST.ABS",
+		"adult": "iyun"
+	},
+	"ayun": {
+		"breakdown": "(a)yun",
+		"Classification1": "PRT.REFERENT",
+		"Classification2": "DEM.DIST.ABS",
+		"adult": "ayun"
+	},
+	"siyang": {
+		"Stem": "siya",
+		"affix1": "-ng",
+		"breakdown": "siya(ng)",
+		"Classification1": "3.SG.ABS=LKR.1CONJ",
+		"Classification2": "3.TOPIC=LKR.1CONJ",
+		"Classification3": "3.TOPIC (NPERS.SGE.GEN)",
+		"adult": "siyang"
+	},
+	"kayla": {
+		"breakdown": "kanila",
+		"Classification1": "3.PL.OBL",
+		"Classification2": "1+2SG.OBL",
+		"adult": "kanila"
+	},
+	"eto": {
+		"breakdown": "ito",
+		"Classification1": "DEM.PROX.ABS",
+		"Classification2": "DEM.PROX.ABS QM",
+		"adult": "ito"
+	},
+	"yon": {
+		"breakdown": "(i)yan",
+		"Classification1": "DEM.MED.ABS",
+		"Classification2": "DEM.DIST.ABS",
+		"adult": "iyan"
+	},
+	"nun": {
+		"breakdown": "(i)yan",
+		"Classification1": "DEM.MED.ABS",
+		"Classification2": "DEM.DIST.ABS",
+		"adult": "iyun"
+	}
+}

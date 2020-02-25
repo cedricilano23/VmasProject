@@ -1,3 +1,29 @@
 module.exports = [
-  'laro'
-]
+    'laro',
+    'tayo',
+    'labas',
+    'kulay',
+    'lagpas',
+    'mommy',
+    'laba',
+    'turo',
+    'laki',
+    'bakit',
+    'sama',
+    'dito',
+    'naman',
+    'tapos',
+    'lahat',
+    'laki',
+    'liit',
+    'wala',
+    'balik',
+    'takip',
+    'kapatid',
+    'kuha',
+    'ngayon',
+    'bata',
+    'kita',
+    'saan',
+    'ako'
+  ]
