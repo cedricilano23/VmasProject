@@ -1,14 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { wordProcess } from '../../utils/classifier';
-import format from '../../utils/classifier/format';
-import wordCounter from '../../utils/counter';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver'
-import { element } from 'protractor';
-
-
-
-
+import * as search from '../../utils/data/search';
 
 @Component({
   selector: 'app-home',
@@ -31,58 +24,104 @@ export class HomeComponent implements OnInit {
   uploadDocument(file){
     let fileReader = new FileReader();
     fileReader.onload = (e) => {
-      console.log(wordCounter(fileReader.result))
-      this.createExcel(wordCounter(fileReader.result));
+      this.createExcel2(search(fileReader.result));
     }
     var result = fileReader.readAsText(this.file)
   }
 
-
-  createExcel(result){
-    var wb = XLSX.utils.book_new();
+  createExcel2(results) {
+    var wb = XLSX.utils.book_new()
     wb.Props = { 
       Title: "VMAS",
       Subject: "VMAS",
       Author: "VMAS",
       CreatedDate: new Date()
-    };
-    wb.SheetNames.push("Known Words");
-    var wb_data_known = [];
-    wb_data_known.push(new Array("Word", "Stem", "Affixes", "Code"));
-    result.known.forEach(element => {
-      var affixes = element.unlapi.concat(element.gitlapi.concat(element.hulapi)).toString();
-      wb_data_known.push(new Array(element.word.whole, element.word.root, affixes));
-    });  
-    var ws_known = XLSX.utils.aoa_to_sheet(wb_data_known);
-    wb.Sheets["Known Words"] = ws_known;
+    }
 
+    var books = Object.keys(results)
+    books.forEach(book => {
+      wb.SheetNames.push(book)
+      var wbData = []
+      var typeData = results[book].words
+      var words = Object.keys(typeData)
+      var morphemeCountTotal = 0
 
-    wb.SheetNames.push("Unknown Words");
-    var wb_data_unknown = [];
-    wb_data_unknown.push(new Array("Unknown Words"))
+      wbData.push([
+        "Word",
+        "Stem",
+        "Breakdown",
+        "Affix 1",
+        "Affix 2",
+        "Affix 3",
+        "Affix 4",
+        "Classification 1",
+        "Classification 2",
+        "Adult Form",
+        "",
+        "Count of Word",
+        "Count of Morpheme"
+      ])
 
-    result.unknown.forEach(element => {
-      var unknownWord = element.word.whole;
-      unknownWord.replace(/[^a-zA-Z ]/g, "")
-      if(element.word.whole){
-        
-        wb_data_unknown.push(new Array(unknownWord));
+      words.forEach(word => {
+        var wordObject = typeData[word]
+        var morphemeCount = this.morphemeCounter(wordObject.data)
+
+        morphemeCountTotal += morphemeCount
+        wbData.push([
+          word,
+          wordObject.data.stem || "",
+          wordObject.data.breakdown || "",
+          wordObject.data.affix1 || "",
+          wordObject.data.affix2 || "",
+          wordObject.data.affix3 || "",
+          wordObject.data.affix4 || "",
+          wordObject.data.classification || "",
+          wordObject.data.classification2 || "",
+          wordObject.data.adult || "",
+          "",
+          wordObject.count,
+          morphemeCount
+        ])
+      })
+
+      wbData.push([
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "TOTAL:",
+        results[book].count,
+        morphemeCountTotal
+      ])
+
+      var wbDataSheet = XLSX.utils.aoa_to_sheet(wbData);
+      wb.Sheets[book] = wbDataSheet
+    })
+
+    var wbout = XLSX.write(
+      wb, 
+      { 
+        bookType:'xlsx', 
+        type: 'binary' 
       }
-    });
-    var ws_unknown = XLSX.utils.aoa_to_sheet(wb_data_unknown);
-    wb.Sheets["Unknown Words"] = ws_unknown;
+    ); 
 
-
-
-    var wbout = XLSX.write(wb, {bookType:'xlsx', type: 'binary'}); 
-
-
-    // this.generateExcel(wbout);
-
-    saveAs(new Blob([this.generateExcel(wbout)],{type:"application/octet-stream"}),'test.xlsx');
+    saveAs(
+      new Blob(
+        [ this.generateExcel(wbout) ], 
+        { type: "application/octet-stream" }
+      ),
+      'test.xlsx'
+    );
   }
 
-  generateExcel(s){
+  generateExcel(s) {
     var buf = new ArrayBuffer(s.length);
     var view = new Uint8Array(buf);
     for(var i = 0; i < s.length ; i++){
@@ -91,7 +130,17 @@ export class HomeComponent implements OnInit {
     return buf;
   }
 
+  morphemeCounter(wordData) {
+    var morphemeCount = 1
+    if (wordData.affix1 !== undefined)
+      morphemeCount++
+    if (wordData.affix2 !== undefined)
+      morphemeCount++
+    if (wordData.affix3 !== undefined)
+      morphemeCount++
+    if (wordData.affix4 !== undefined)
+      morphemeCount++
 
-
-
+    return morphemeCount
+  }
 } 
