@@ -1,0 +1,57 @@
+{
+	"isang": {
+		"breakdown": "isa(ng)",
+		"classification": "1OR=LKR.1CONJ",
+		"adult": "isang"
+	},
+	"isa": {
+		"breakdown": "isa",
+		"classification": "1OR",
+		"adult": "isa"
+	},
+	"wala": {
+		"breakdown": "wala",
+		"classification": "NEXIST",
+		"adult": "wala"
+	},
+	"konti": {
+		"breakdown": "konti",
+		"classification": "few",
+		"adult": "konti"
+	},
+	"la": {
+		"breakdown": "(wa)la",
+		"classification": "NEXIST",
+		"adult": "wala"
+	},
+	"dami": {
+		"breakdown": "dami",
+		"classification": "many",
+		"adult": "dami"
+	},
+	"madami": {
+		"breakdown": "m-(k)a-dami",
+		"classification": "STAT=STEM.many",
+		"adult": "madami"
+	},
+	"lahat": {
+		"breakdown": "lahat",
+		"classification": "all",
+		"adult": "lahat"
+	},
+	"dalawa": {
+		"breakdown": "dalawa",
+		"classification": "two",
+		"adult": "dalawa"
+	},
+	"marami": {
+		"breakdown": "m-(k)a-rami",
+		"classification": "STAT=STEM.many",
+		"adult": "marami"
+	},
+	"mararami": {
+		"breakdown": "m-(k)a-(ra)-rami",
+		"classification": "STAT=REDUP=STEM.many",
+		"adult": "mararami"
+	}
+}

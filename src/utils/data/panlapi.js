@@ -1,10 +1,16 @@
 const unlapi = [
     'nag',
     'mag',
-    'pag'
+    'pag',
+    'ma',
+    'tag',
+    'ka',
+    'taga'
 ]
 
 const gitlapi = [
+    'in',
+    'um',
     'in',
     'um'
 ]
@@ -13,7 +19,7 @@ const hulapi = [
     'hin',
     'han',
     'in',
-    'an'
+    'an',
 ]
 
 module.exports = {

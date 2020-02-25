@@ -1,0 +1,49 @@
+{
+  "at": {
+    "breakdown": "at",
+    "classification": "CONJ1",
+    "adult": "at"
+  },
+  "tapos": {
+    "breakdown": "tapos",
+    "classification": "SEQ",
+    "adult": "tapos"
+  },
+  "kasi": {
+    "breakdown": "kasi",
+    "classification": "PRT.because",
+    "adult": "kasi"
+  },
+  "pag": {
+    "breakdown": "(ka)pag",
+    "classification": "COND.when",
+    "classification2": "CONJ.4",
+    "adult": "kapag"
+  },
+  "tsaka": {
+    "breakdown": "(a)tsaka",
+    "classification": "CONJ.4",
+    "adult": "atsaka"
+  },
+  "para": {
+    "breakdown": "para",
+    "classification": "PURP",
+    "adult": "para"
+  },
+  "kaya": {
+    "breakdown": "kaya",
+    "classification": "PRT.conclusive",
+    "classification2": "PRT.speculation",
+    "adult": "kaya"
+  },
+  "pero": {
+    "breakdown": "pero",
+    "classification": "LKR.1COND",
+    "adult": "pero"
+  },
+  "pang": {
+    "breakdown": "para(ng)",
+    "classification": "SIM",
+    "adult": "pang"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "opo": {
+    "breakdown": "opo",
+    "classification": " PRT. polite.yes",
+    "adult": "opo"
+  },
+  "sige": {
+    "breakdown": "sige",
+    "classification": "PRT.agreement",
+    "adult": "sige"
+  },
+  "hindi": {
+    "breakdown": "hindi",
+    "classification": "NEG",
+    "adult": "hindi"
+  },
+  "di": {
+    "breakdown": "(hin)di",
+    "classification": "NEG",
+    "adult": "hindi"
+  },
+  "oo": {
+    "breakdown": "oo",
+    "classification": "PRT.yes",
+    "adult": "oo"
+  },
+  "wala": {
+    "breakdown": "wala",
+    "classification": "NEXIST",
+    "adult": "walk"
+  },
+  "meyon": {
+    "breakdown": "(may>)me(r>)yon",
+    "classification": "EXIST",
+    "adult": "mayroon"
+  },
+  "may": {
+    "breakdown": "may",
+    "classification": "EXIST",
+    "adult": "EXIST"
+  },
+  "ayaw": {
+    "breakdown": "ayaw",
+    "classification": "PRT.rejection",
+    "adult": "ayaw"
+  },
+  "meron": {
+    "breakdown": "meron",
+    "classification": "EXIST",
+    "adult": "meron"
+  },
+  "walang": {
+    "breakdown": "wala(ng)",
+    "classification": "NEXIST=LKR.1CONJ",
+    "adult": "walang",
+    "Affix1": "-ng"
+  },
+  "wag": {
+    "breakdown": "wag",
+    "classification": "PRT.prohib",
+    "adult": "huwag"
+  }
+}

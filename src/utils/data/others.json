@@ -1,0 +1,129 @@
+{
+  "naman": {
+    "breakdown": "naman",
+    "classification": "PRT.instead",
+    "classification2": "PRT.even",
+    "adult": "naman"
+  },
+  "pa": {
+    "breakdown": "pa",
+    "classification": "ADD",
+    "classification2": "PRT.still/yet/more",
+    "adult": "pa"
+  },
+  "eh": {
+    "breakdown": "eh",
+    "classification": "PRT.explanative",
+    "adult": "eh"
+  },
+  "hala": {
+    "breakdown": "hala",
+    "classification": " PRT.warning",
+    "adult": "hala"
+  },
+  "oh": {
+    "breakdown": "oh",
+    "classification": "DISJ",
+    "adult": "oh"
+  },
+  "ba": {
+    "breakdown": "ba",
+    "classification": "PRT.interrogative",
+    "adult": "ba"
+  },
+  "lang": {
+    "breakdown": "lang",
+    "classification": " PRT.just/only",
+    "adult": "opo"
+  },
+  "nalang": {
+    "Stem": "lang",
+    "Affix": "na-",
+    "breakdown": "(na)-lang",
+    "classification": "PRT.just/only",
+    "adult": "nalang"
+  },
+  "po": {
+    "breakdown": "po",
+    "classification": "PRT.1polite",
+    "adult": "po"
+  },
+  "namang": {
+    "Stem": "naman",
+    "Affix": "-ng",
+    "breakdown": "nama(n)ng",
+    "classification": "PRT.instead",
+    "classification2": "PRT.even",
+    "adult": "namang"
+  },
+  "ha": {
+    "breakdown": "ha",
+    "classification": "QM",
+    "classification2": "PRT.confused",
+    "adult": "ha"
+  },
+  "ay": {
+    "breakdown": "ay",
+    "classification": "PRT.exclamative",
+    "adult": "ay"
+  },
+  "noh": {
+    "breakdown": "noh",
+    "classification": "PRT.confirmation",
+    "adult": "po"
+  },
+  "ah": {
+    "breakdown": "ah",
+    "classification": "PRT.realize",
+    "adult": "ah"
+  },
+  "uy": {
+    "breakdown": "uy",
+    "classification": "PRT.greeting",
+    "adult": "uy"
+  },
+  "pong": {
+    "Stem": "po",
+    "Affix": "-ng",
+    "breakdown": "po(ng)",
+    "classification": "PRT.polite=LKR.1CONJ",
+    "adult": "pong"
+  },
+  "daw": {
+    "breakdown": "daw",
+    "classification": "PRT.reportedly",
+    "adult": "daw"
+  },
+  "pang": {
+    "Stem": "pa",
+    "Affix": "-ng",
+    "breakdown": "pa(ng)",
+    "classification": "ADD=LKR.1CONJ",
+    "adult": "pang"
+  },
+  "pala": {
+    "breakdown": "pala",
+    "classification": "PRT.surprise",
+    "adult": "pala"
+  },
+  "diba": {
+    "breakdown": "diba",
+    "classification": "PRT.confirmation",
+    "adult": "po"
+  },
+  "ulit": {
+    "breakdown": "ulit",
+    "classification": "PRT.again",
+    "adult": "po"
+  },
+  "bali": {
+    "breakdown": "bali",
+    "classification": "PRT.conclusive",
+    "adult": "bali"
+  },
+  "edi": {
+    "breakdown": "bali",
+    "classification": "PRT.conclusive",
+    "adult": "bali"
+  }
+}

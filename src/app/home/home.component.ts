@@ -4,6 +4,7 @@ import format from '../../utils/classifier/format';
 import wordCounter from '../../utils/counter';
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver'
+import { element } from 'protractor';
 
 
 
@@ -21,8 +22,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(wordCounter('Ako ay pinaglalaruan'))
-    console.log(wordProcess(format('pinaglalaruan')))
   }
 
   fileChanged(e){
@@ -32,30 +31,48 @@ export class HomeComponent implements OnInit {
   uploadDocument(file){
     let fileReader = new FileReader();
     fileReader.onload = (e) => {
-      console.log(wordCounter(fileReader.result));
-      this.createExcel();
+      console.log(wordCounter(fileReader.result))
+      this.createExcel(wordCounter(fileReader.result));
     }
-
     var result = fileReader.readAsText(this.file)
   }
 
 
-  createExcel(){
+  createExcel(result){
     var wb = XLSX.utils.book_new();
-    wb.Props = {
+    wb.Props = { 
       Title: "VMAS",
-      Subject: "test",
-      Author: "Nayeon",
+      Subject: "VMAS",
+      Author: "VMAS",
       CreatedDate: new Date()
     };
-    wb.SheetNames.push("Test Sheet");
-    var wb_data = [
-      ['hello', 'world'],
-      ['new', 'line']
-  
-    ];
-    var ws = XLSX.utils.aoa_to_sheet(wb_data);
-    wb.Sheets["Test Sheet"] = ws;
+    wb.SheetNames.push("Known Words");
+    var wb_data_known = [];
+    wb_data_known.push(new Array("Word", "Stem", "Affixes", "Code"));
+    result.known.forEach(element => {
+      var affixes = element.unlapi.concat(element.gitlapi.concat(element.hulapi)).toString();
+      wb_data_known.push(new Array(element.word.whole, element.word.root, affixes));
+    });  
+    var ws_known = XLSX.utils.aoa_to_sheet(wb_data_known);
+    wb.Sheets["Known Words"] = ws_known;
+
+
+    wb.SheetNames.push("Unknown Words");
+    var wb_data_unknown = [];
+    wb_data_unknown.push(new Array("Unknown Words"))
+
+    result.unknown.forEach(element => {
+      var unknownWord = element.word.whole;
+      unknownWord.replace(/[^a-zA-Z ]/g, "")
+      if(element.word.whole){
+        
+        wb_data_unknown.push(new Array(unknownWord));
+      }
+    });
+    var ws_unknown = XLSX.utils.aoa_to_sheet(wb_data_unknown);
+    wb.Sheets["Unknown Words"] = ws_unknown;
+
+
 
     var wbout = XLSX.write(wb, {bookType:'xlsx', type: 'binary'}); 
 
