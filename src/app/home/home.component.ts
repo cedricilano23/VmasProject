@@ -38,6 +38,9 @@ export class HomeComponent implements OnInit {
       CreatedDate: new Date()
     }
 
+    wb.SheetNames.push('SUMMARY')
+    var wbSummaryData = []
+
     var books = Object.keys(results)
     books.forEach(book => {
       wb.SheetNames.push(book)
@@ -46,7 +49,7 @@ export class HomeComponent implements OnInit {
       var words = Object.keys(typeData)
       var morphemeCountTotal = 0
 
-      wbData.push([
+      var headers = [
         "Word",
         "Stem",
         "Breakdown",
@@ -60,14 +63,17 @@ export class HomeComponent implements OnInit {
         "",
         "Count of Word",
         "Count of Morpheme"
-      ])
+      ]
+
+      wbSummaryData.push(headers)
+      wbData.push(headers)
 
       words.forEach(word => {
         var wordObject = typeData[word]
         var morphemeCount = this.morphemeCounter(wordObject.data)
 
         morphemeCountTotal += morphemeCount
-        wbData.push([
+        var wordRow = [
           word,
           wordObject.data.stem || "",
           wordObject.data.breakdown || "",
@@ -81,10 +87,13 @@ export class HomeComponent implements OnInit {
           "",
           wordObject.count,
           morphemeCount
-        ])
+        ]
+
+        wbSummaryData.push(wordRow)
+        wbData.push(wordRow)
       })
 
-      wbData.push([
+      var footer = [
         "",
         "",
         "",
@@ -98,11 +107,16 @@ export class HomeComponent implements OnInit {
         "TOTAL:",
         results[book].count,
         morphemeCountTotal
-      ])
+      ]
+      wbSummaryData.push(footer)
+      wbData.push(footer)
 
       var wbDataSheet = XLSX.utils.aoa_to_sheet(wbData);
       wb.Sheets[book] = wbDataSheet
     })
+
+    var wbSummaryDataSheet = XLSX.utils.aoa_to_sheet(wbSummaryData);
+    wb.Sheets['SUMMARY'] = wbSummaryDataSheet
 
     var wbout = XLSX.write(
       wb, 
