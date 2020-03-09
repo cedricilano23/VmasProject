@@ -108,6 +108,7 @@ export class HomeComponent implements OnInit {
         results[book].count,
         morphemeCountTotal
       ]
+      wbSummaryData.push(footer)
       wbData.push(footer)
 
       var wbDataSheet = XLSX.utils.aoa_to_sheet(wbData);
@@ -130,7 +131,7 @@ export class HomeComponent implements OnInit {
         [ this.generateExcel(wbout) ], 
         { type: "application/octet-stream" }
       ),
-      'test.xlsx'
+      'LSA.xlsx'
     );
   }
 
