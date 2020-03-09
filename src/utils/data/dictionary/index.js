@@ -19,5 +19,5 @@ module.exports = {
   PRONOUNS,
   QUALITATIVES,
   QUANTITATIVES,
-  VERBS
+  VERBS,
 }

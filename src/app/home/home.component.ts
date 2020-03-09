@@ -62,7 +62,8 @@ export class HomeComponent implements OnInit {
         "Adult Form",
         "",
         "Count of Word",
-        "Count of Morpheme"
+        "Count of Morpheme",
+        "Total Count"
       ]
 
       if (bookIndex == 0) wbSummaryData.push(headers)
@@ -86,7 +87,8 @@ export class HomeComponent implements OnInit {
           wordObject.data.adult || "",
           "",
           wordObject.count,
-          morphemeCount
+          morphemeCount,
+          wordObject.count * morphemeCount
         ]
 
         wbSummaryData.push(wordRow)
@@ -106,7 +108,8 @@ export class HomeComponent implements OnInit {
         "",
         "TOTAL:",
         results[book].count,
-        morphemeCountTotal
+        morphemeCountTotal,
+        results[book].count + morphemeCountTotal,
       ]
       wbSummaryData.push(footer)
       wbData.push(footer)
