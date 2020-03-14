@@ -1,0 +1,117 @@
+{
+    "bakit": 
+    {
+		"breakdown" : "bakit",
+		"classification" : "why",
+		"classification2" : "CQ",
+		"adult" : "bakit"
+    },
+
+    "saan": 
+    {
+		"breakdown" : "saan",
+		"classification" : "where",
+		"classification2" : "CQ",
+		"adult" : "saan"
+    },
+
+    "sino": 
+    {
+		"breakdown" : "sino",
+		"classification" : "who",
+		"classification2" : "CQ",
+		"adult" : "sino"
+    },
+
+    "ano": 
+    {
+		"breakdown" : "ano",
+		"classification" : "WS",
+		"classification2" : "CQ",
+		"adult" : "ano"
+    },
+    "opo": 
+    {
+		"breakdown" : "opo",
+		"Classification" : " PRT. polite.yes",
+		"adult" : "opo"
+    },
+
+    "sige": 
+    {
+		"breakdown" : "sige",
+		"Classification" : "PRT.agreement",
+		"adult" : "sige"
+    },
+
+    "hindi": 
+    {
+		"breakdown" : "hindi",
+		"Classification" : "NEG",
+		"adult" : "hindi"
+    },
+
+    "di": 
+    {
+		"breakdown" : "(hin)di",
+		"Classification" : "NEG",
+		"adult" : "hindi"
+    },
+
+    "oo": 
+    {
+		"breakdown" : "oo",
+		"Classification" : "PRT.yes",
+		"adult" : "oo"
+    },
+
+    "wala": 
+    {
+		"breakdown" : "wala",
+		"Classification" : "NEXIST",
+		"adult" : "walk"
+    },
+
+    "meyon": 
+    {
+		"breakdown" : "(may>)me(r>)yon",
+		"Classification" : "EXIST",
+		"adult" : "mayroon"
+    },
+
+    "may": 
+    {
+		"breakdown" : "may",
+		"Classification" : "EXIST",
+		"adult" : "EXIST"
+    },
+
+    "ayaw": 
+    {
+		"breakdown" : "ayaw",
+		"Classification" : "PRT.rejection",
+		"adult" : "ayaw"
+    },
+
+	"meron":
+	{
+		"breakdown" : "meron",
+		"Classification" : "EXIST",
+		"adult" : "meron"
+    },
+
+    "walang": 
+    {
+		"breakdown" : "wala(ng)",
+		"Classification" : "NEXIST=LKR.1CONJ",
+		"adult" : "walang",
+		"Affix1" : "-ng"
+    },
+
+	"wag":
+    {
+		"breakdown" : "wag",
+		"Classification" : "PRT.prohib",
+		"adult" : "huwag"
+    }
+}
