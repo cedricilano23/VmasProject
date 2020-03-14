@@ -8,6 +8,7 @@ const PRONOUNS = require('./src/pronouns.json')
 const QUALITATIVES = require('./src/qualitatives.json')
 const QUANTITATIVES = require('./src/quantitatives.json')
 const VERBS = require('./src/verbs.json')
+const WH = require('./src/wh.json')
 
 module.exports = {
   ADVERBS,
@@ -20,4 +21,5 @@ module.exports = {
   QUALITATIVES,
   QUANTITATIVES,
   VERBS,
+  WH,
 }
