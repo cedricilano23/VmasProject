@@ -20,15 +20,14 @@
                     <aside class="col-md-5 mobile-app-column">
                         <div class="mobile-app" id="formContainer2">
                             <h2 class ="form-title text-center">Insert word file here</h2>
-                            <!-- <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml"> -->
-                                <div class="formAside">
-                                    <div class="form-group">
-                                        <input type="file" id="docpicker" (change)="fileChanged($event)" accept=".txt">
+                            <!-- <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml"> -->                        
+                                    <div class="form-group" >
+                                            <input type="file" class="custome-file-input"id="file" (change)="fileChanged($event)" accept=".txt">
+                                            <label for="file" class="btn-1">Choose a file</label>
+                                    </div> 
+                                    <div class="button_cont" align="center">
+                                        <button class = "submit_button"type="submit" (click)="uploadDocument()">Submit</button>
                                     </div>
-                                    <div class="text-center ct-u-paddingTop30">
-                                        <button type="submit" (click)="uploadDocument()" class="btn btn-small btn-motive">Submit</button>
-                                    </div>
-                                </div>
                             <!-- </form> -->
                         </div>
                     </aside>
