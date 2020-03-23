@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     this.file = e.target.files[0];
   }
 
-  uploadDocument(file){
+  uploadDocument(){
     let fileReader = new FileReader();
     fileReader.onload = (e) => {
       this.createExcel2(search(fileReader.result));
