@@ -1,8 +1,132 @@
-.title{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    margin-top: 30px;
-    margin-left: 30px;
-    font-weight: bold;
-    color: #56bfdf;
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body {
+  background-image: url('/assets/images/bg.jpg');
+}
+
+.title {
+  font-family: 'Bungee', cursive;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-weight: bold;
+  color: #56bfdf;
+  width: 60%;
+}
+
+.sub-desc {
+  font-family: 'Roboto', monospace;
+  margin-left: 5%;
+  color: #56bfdf;
+  width: 50%;
+}
+
+.topImage {
+  position: fixed;
+  max-width: 70%;
+  top: -30%;
+  left: 42.5%;
+  bottom: 0;
+}
+
+.rightTopImage {
+  position: fixed;
+  max-width: 55%;
+  left: 77%;
+  top: -11%;
+}
+
+.mobile-app .form-title {
+  text-transform: uppercase;
+  margin-left: 77%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.custome-file-input {
+  position: relative;
+  right: -76%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.button_cont {
+  position: relative;
+  right: -88.5%;
+  max-width: 100px;
+  top: 10px;
+}
+
+.submit_button {
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #56bfdf;
+  color: white;
+  padding: 10px 20px;
+}
+
+.files {
+  position: absolute;
+  max-width: 4%;
+  left: 71.5%;
+  bottom: 51%;
+}
+
+/* Footer */
+.testimony {
+  margin-left: 15%;
+  bottom: 25%;
+  position: absolute;
+}
+
+.boy-testimony {
+  position: absolute;
+  width: 10%;
+  top: 75.5%;
+  left: 150px;
+}
+
+.girl-testimony {
+  position: absolute;
+  width: 12%;
+  top: 75%;
+  left: 320px;
+}
+
+.straight-dots {
+  position: fixed;
+  max-width: 25%;
+  left: 69.5%;
+  top: 55%;
+}
+
+.dotted {
+  max-width: 22%;
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+}
+
+.directory {
+  background-image: url('/assets/images/directory.png');
+  background-repeat: no-repeat;
+  height: 13%;
+  width: 6.5%;
+  margin-left: 89%;
+  margin-top: 8%;
+  border: none;
+}
+
+.sun {
+  position: fixed;
+  max-width: 22%;
+  left: 57%;
+  top: 83%;
+}
+
+.blue-waves {
+  position: fixed;
+  max-width: 35%;
+  left: 80%;
+  top: 83%;
 }

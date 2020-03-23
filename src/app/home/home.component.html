@@ -1,38 +1,42 @@
+
 <main class="terms-wrapper">
     <div class="container">
-        <div class="landing-section">
-            <div class="container"> 
-                <div class="row">
-                    <div class="col-md-7 landing-section-firstContent">
-                        <h2 class="ct-sectionHeader--type2">Validation of morphological analysis software <small></small></h2>
-                        <div id="article-main-content2">
-                            <div class="row">
-                                <div class="col-lg-6 col-lg-push-6 text-center-tablet text-center">
-                                    <img alt="VMAS" src="https://www.solodev.com/assets/landing-page/mobile-app-graphic.png">
-                                </div>
-                                <div class="col-lg-6 col-lg-pull-6">
-                                    <p class="ct-u-paddingBottom20">This is a software that allows for easy translation, categorization, and classification of words in a text document!
-                                    <p class="ct-u-paddingBottom20"> It can also count and tally words and morphemes with just a push of a button!</p>
-                                </div>
-                            </div>
-                        </div>
+      <div class="landing-section">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-md-7 landing-section-firstContent">
+              <img src="../assets/images/Blue L.png" class="topImage">
+              <img src="../assets/images/White Wavy.png" class="rightTopImage">
+              <div class="title">Morphological Analysis Parsing Software (MAPS)</div>
+              <div id="article-main-content2">
+                  <div class="row">
+                    <div class="col-lg-6 col-lg-push-6 text-center-tablet text-center">
+                     
                     </div>
-                    <aside class="col-md-5 mobile-app-column">
-                        <div class="mobile-app" id="formContainer2">
-                            <h2 class ="form-title text-center">Insert word file here</h2>
-                            <!-- <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml"> -->                        
-                                    <div class="form-group" >
-                                            <input type="file" class="custome-file-input"id="file" (change)="fileChanged($event)" accept=".txt">
-                                            <label for="file" class="btn-1">Choose a file</label>
-                                    </div> 
-                                    <div class="button_cont" align="center">
-                                        <button class = "submit_button"type="submit" (click)="uploadDocument()">Submit</button>
-                                    </div>
-                            <!-- </form> -->
-                        </div>
-                    </aside>
-                </div>
+                    <div class="col-lg-6 col-lg-pull-6 sub-desc">
+                      <p class="ct-u-paddingBottom20">This is a software that allows for easy translation, categorization, and classification of words in a text document! </p>
+                      <p class="ct-u-paddingBottom20"> It can also count and tally words and morphemes with just a push of a button!</p>
+                    </div>
+                  </div>
+              </div>
             </div>
+            <aside class="col-md-5 mobile-app-column">
+              <div class="mobile-app" id="formContainer2">
+                <h2 class ="form-title">Insert Text File</h2>
+                <!-- <form name="contentForm" enctype="multipart/form-data" method="post" action="/resources/case-studies/are-you-part-of-the-app-majoritya-.stml"> -->                       
+                  <div class="form-group">
+                    <input type="file" class="custome-file-input"id="file" (change)="fileChanged($event)" accept=".txt">
+                  </div> 
+                  <div class="button_cont">
+                    <button class = "submit_button"type="submit" (click)="uploadDocument()">Submit</button>
+                  </div>
+                <!-- </form> -->
+              </div>
+            </aside>
+            <img src="../assets/images/files-and-folders.png" class="files">
+          </div>
         </div>
+      </div>
     </div>
-</main>
+  </main>
+
