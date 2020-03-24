@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "VmasProj"
+    }
+  },
+  "defaultProject": "VmasProj",
+  "cli": {
+    "analytics": false
+  }
 }
